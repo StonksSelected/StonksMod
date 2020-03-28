@@ -1,0 +1,108 @@
+{
+  "_fv": 6,
+  "_type": "block",
+  "definition": {
+    "texture": "stonkore",
+    "textureTop": "stonkore",
+    "textureLeft": "stonkore",
+    "textureFront": "stonkore",
+    "textureRight": "stonkore",
+    "textureBack": "stonkore",
+    "renderType": 11,
+    "customModelName": "Single texture",
+    "rotationMode": 0,
+    "hasTransparency": false,
+    "transparencyType": "SOLID",
+    "mx": 0.0,
+    "my": 0.0,
+    "mz": 0.0,
+    "Mx": 1.0,
+    "My": 1.0,
+    "Mz": 1.0,
+    "faceShape": "SOLID",
+    "name": "Stonkius Ore",
+    "specialInfo": [],
+    "hardness": 1.0,
+    "resistance": 10.0,
+    "hasGravity": true,
+    "creativeTab": {
+      "value": "CUSTOM:StonksMod"
+    },
+    "destroyTool": "pickaxe",
+    "affectedBySilkTouch": true,
+    "customDrop": {
+      "value": "CUSTOM:StonkiusFUel1"
+    },
+    "dropAmount": 3,
+    "isBeaconBase": true,
+    "enchantPowerBonus": 0.0,
+    "plantsGrowOn": true,
+    "canProvidePower": true,
+    "lightOpacity": 255,
+    "material": {
+      "value": "ROCK"
+    },
+    "tickRate": 10,
+    "tickRandomly": false,
+    "isReplaceable": false,
+    "colorOnMap": "GREEN_TERRACOTTA",
+    "creativePickItem": {
+      "value": ""
+    },
+    "flammability": 2,
+    "fireSpreadSpeed": 0,
+    "isLadder": true,
+    "slipperiness": 5.0,
+    "reactionToPushing": "DESTROY",
+    "isNotColidable": false,
+    "soundOnStep": {
+      "value": "ANVIL"
+    },
+    "luminance": 0.0,
+    "unbreakable": false,
+    "breakHarvestLevel": 1,
+    "spawnParticles": true,
+    "particleToSpawn": {
+      "value": "CRIT"
+    },
+    "particleSpawningShape": "Spread",
+    "particleSpawningRadious": 2.0,
+    "particleAmount": 2,
+    "particleSpawningCondition": "ALWAYS",
+    "hasInventory": false,
+    "guiBoundTo": "<NONE>",
+    "openGUIOnRightClick": false,
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "inventoryDropWhenDestroyed": true,
+    "inventoryComparatorPower": true,
+    "inventoryOutSlotIDs": [],
+    "onRedstoneOn": {
+      "name": "StonkiusOreRedstoneOn"
+    },
+    "spawnWorldTypes": [
+      "CUSTOM:AidsLand",
+      "CUSTOM:Stonkland",
+      "End"
+    ],
+    "restrictionBiomes": [],
+    "blocksToReplace": [
+      {
+        "value": "Blocks.STONE"
+      },
+      {
+        "value": "Blocks.STONE#1"
+      },
+      {
+        "value": "Blocks.BEDROCK"
+      },
+      {
+        "value": "Blocks.PURPUR_STAIRS"
+      }
+    ],
+    "frequencyPerChunks": 10,
+    "frequencyOnChunk": 16,
+    "minGenerateHeight": 0,
+    "maxGenerateHeight": 64
+  }
+}
