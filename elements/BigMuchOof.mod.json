@@ -1,0 +1,70 @@
+{
+  "_fv": 6,
+  "_type": "biome",
+  "definition": {
+    "name": "Big Much Oof",
+    "groundBlock": {
+      "value": "Blocks.MYCELIUM"
+    },
+    "undergroundBlock": {
+      "value": "Blocks.EMERALD_ORE"
+    },
+    "generateLakes": true,
+    "treeType": 1,
+    "vanillaTreeType": "Mega spruce trees",
+    "minHeight": 69,
+    "spawnVines": true,
+    "treeVines": {
+      "value": "CUSTOM:STONKFLUID"
+    },
+    "treeStem": {
+      "value": "Blocks.SLIME_BLOCK"
+    },
+    "treeBranch": {
+      "value": "Blocks.EMERALD_ORE"
+    },
+    "treeFruits": {
+      "value": "Blocks.LIME_SHULKER_BOX"
+    },
+    "customColors": true,
+    "airColor": {
+      "value": -13566186,
+      "falpha": 0.0
+    },
+    "grassColor": {
+      "value": -12631771,
+      "falpha": 0.0
+    },
+    "waterColor": {
+      "value": -458752,
+      "falpha": 0.0
+    },
+    "treesPerChunk": 2,
+    "grassPerChunk": 69,
+    "flowersPerChunk": 2,
+    "mushroomsPerChunk": 4,
+    "bigMushroomsChunk": 1,
+    "sandPathcesPerChunk": 1,
+    "gravelPatchesPerChunk": 1,
+    "reedsPerChunk": 1,
+    "cactiPerChunk": 0,
+    "deadBushesPerChunk": 1,
+    "rainingPossibility": 0.1,
+    "temperature": 0.5,
+    "baseHeight": 0.1,
+    "heightVariation": 0.2,
+    "spawnBiome": true,
+    "biomeWeight": 1,
+    "biomeType": "WARM",
+    "biomeCategory": "NONE",
+    "parent": {
+      "value": "CUSTOM:StonkTrees"
+    },
+    "biomeDictionaryTypes": [],
+    "spawnList": [
+      {
+        "value": "CUSTOM:Stonker"
+      }
+    ]
+  }
+}

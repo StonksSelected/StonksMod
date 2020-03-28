@@ -1,0 +1,44 @@
+{
+  "_fv": 6,
+  "_type": "gun",
+  "definition": {
+    "renderType": 0,
+    "texture": "datbow",
+    "customModelName": "Normal",
+    "name": "Big Bow Stonk Bow",
+    "creativeTab": {
+      "value": "CUSTOM:StonksMod"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": "Blocks.TNT"
+    },
+    "shootConstantly": false,
+    "usageCount": 0,
+    "actionSound": {
+      "value": "block.anvil.land"
+    },
+    "hasGlow": true,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "bulletPower": 5.0,
+    "bulletDamage": 10.0,
+    "bulletKnockback": 11,
+    "bulletParticles": false,
+    "bulletIgnitesFire": true,
+    "bulletItemTexture": {
+      "value": "Blocks.TNT"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "",
+    "onBulletHitsBlock": {
+      "name": "BigBowStonkBowBulletHitsBlock"
+    },
+    "onBulletHitsPlayer": {
+      "name": "BigBowStonkBowBulletHitsPlayer"
+    },
+    "onBulletHitsEntity": {
+      "name": "BigBowStonkBowBulletHitsLivingEntity"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "_fv": 6,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "stonkcookie",
+    "customModelName": "Normal",
+    "name": "Stonk Cookie",
+    "creativeTab": {
+      "value": "CUSTOM:StonksMod"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 69,
+    "saturation": 5.0,
+    "eatingSpeed": 1,
+    "forDogs": true,
+    "isAlwaysEdible": true,
+    "animation": "drink",
+    "hasGlow": true
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "_fv": 6,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "music",
+    "name": "Stonks Song",
+    "description": "Some quality music",
+    "creativeTab": {
+      "value": "CUSTOM:StonksMod"
+    },
+    "music": {
+      "value": "CUSTOM:stonks"
+    },
+    "specialInfo": [
+      "Wtf is this?"
+    ],
+    "hasGlow": true,
+    "onRightClickedInAir": {
+      "name": "MusicDiscAir"
+    }
+  }
+}

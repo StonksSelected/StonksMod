@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "item": "stonks:villagercookie"
+    },
+    "title": {
+      "translate": "advancements.eatdatcookie.title"
+    },
+    "description": {
+      "translate": "advancements.eatdatcookie.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "eatdatcookie": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "stonks:villagercookie"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "experience": 5
+  },
+  "parent": "stonks:stonks"
+}

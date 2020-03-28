@@ -1,0 +1,11 @@
+{
+  "stonks": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "stonks:tonks_ong",
+        "stream": false
+      }
+    ]
+  }
+}

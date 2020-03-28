@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "stonks:stonkland_portal_ew"
+    },
+    "axis=x": {
+      "model": "stonks:stonkland_portal_ns"
+    },
+    "inventory": {
+      "model": "stonks:stonkland_portal_ns"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "item": "stonks:stonksteelarmorbody"
+    },
+    "title": {
+      "translate": "advancements.lookinggood.title"
+    },
+    "description": {
+      "translate": "advancements.lookinggood.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "lookinggood": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "stonks:stonksteelarmorbody",
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 20
+  },
+  "parent": "stonks:juniorstonker"
+}

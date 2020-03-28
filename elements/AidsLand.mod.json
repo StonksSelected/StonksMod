@@ -1,0 +1,65 @@
+{
+  "_fv": 6,
+  "_type": "dimension",
+  "definition": {
+    "portalFrame": {
+      "value": "Blocks.STICKY_PISTON"
+    },
+    "portalParticles": {
+      "value": "CAMPFIRE_SIGNAL_SMOKE"
+    },
+    "portalLuminance": 0.0,
+    "portalSound": {
+      "value": "CUSTOM:stonks"
+    },
+    "igniterName": "OofLand",
+    "igniterTab": {
+      "value": "CUSTOM:StonksMod"
+    },
+    "texture": "stonkcookie",
+    "portalTexture": "yes",
+    "enablePortal": true,
+    "biomesInDimension": [
+      {
+        "value": "CUSTOM:BigMuchOof"
+      },
+      {
+        "value": "CUSTOM:StonkTrees"
+      },
+      {
+        "value": "plains"
+      },
+      {
+        "value": "end_highlands"
+      }
+    ],
+    "worldGenType": "End like gen",
+    "mainFillerBlock": {
+      "value": "Blocks.EMERALD_ORE"
+    },
+    "secondaryFillerBlock": {
+      "value": "Blocks.PISTON_HEAD"
+    },
+    "tertiaryFillerBlock": {
+      "value": "Blocks.SLIME_BLOCK"
+    },
+    "fluidBlock": {
+      "value": "CUSTOM:STONKFLUID"
+    },
+    "airColor": {
+      "value": -12269484,
+      "falpha": 0.0
+    },
+    "canRespawnHere": true,
+    "hasFog": false,
+    "hasWeather": true,
+    "isDark": false,
+    "doesWaterVaporize": false,
+    "sleepResult": "ALLOW",
+    "hasSkyLight": true,
+    "imitateOverworldBehaviour": true,
+    "dimensionMusic": {
+      "value": "CUSTOM:stonks"
+    }
+  }
+}
