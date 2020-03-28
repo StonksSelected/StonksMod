@@ -68,6 +68,11 @@ public class ItemStonkiusFUel1 extends ElementsStonks.ModElement {
 		}
 
 		@Override
+		public boolean canHarvestBlock(IBlockState state, ItemStack stack) {
+			return true;
+		}
+
+		@Override
 		public void addInformation(ItemStack itemstack, World world, List<String> list, ITooltipFlag flag) {
 			super.addInformation(itemstack, world, list, flag);
 			list.add("DAMN BOI DIS SOME GUD FUEL");

@@ -53,10 +53,10 @@
       "value": "Blocks.DIRT#0"
     },
     "tertiaryFillerBlock": {
-      "value": ""
+      "value": "Blocks.IRON_ORE"
     },
     "fluidBlock": {
-      "value": "Blocks.STONE#0"
+      "value": "CUSTOM:STONKFLUID"
     },
     "airColor": {
       "value": -16777216,
@@ -71,7 +71,7 @@
     "hasSkyLight": true,
     "imitateOverworldBehaviour": true,
     "dimensionMusic": {
-      "value": ""
+      "value": "CUSTOM:stonks"
     }
   }
 }

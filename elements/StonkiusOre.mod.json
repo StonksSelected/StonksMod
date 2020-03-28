@@ -11,13 +11,13 @@
     "renderType": 11,
     "customModelName": "Single texture",
     "rotationMode": 0,
-    "hasTransparency": false,
+    "hasTransparency": true,
     "transparencyType": "SOLID",
     "mx": 0.0,
     "my": 0.0,
     "mz": 0.0,
     "Mx": 1.0,
-    "My": 1.0,
+    "My": 70.0,
     "Mz": 1.0,
     "faceShape": "SOLID",
     "name": "Stonkius Ore",
@@ -77,6 +77,9 @@
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
     "inventoryOutSlotIDs": [],
+    "onDestroyedByPlayer": {
+      "name": "StonkiusOreBlockDestroyedByPlayer"
+    },
     "onRedstoneOn": {
       "name": "StonkiusOreRedstoneOn"
     },
@@ -98,6 +101,9 @@
       },
       {
         "value": "Blocks.PURPUR_STAIRS"
+      },
+      {
+        "value": "Blocks.END_STONE"
       }
     ],
     "frequencyPerChunks": 10,

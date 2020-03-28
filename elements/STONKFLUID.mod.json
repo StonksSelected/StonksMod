@@ -9,14 +9,14 @@
     "density": 1000,
     "viscosity": 1000,
     "isGas": false,
-    "type": "WATER",
+    "type": "LAVA",
     "generateBucket": true,
     "creativeTab": {
       "value": "CUSTOM:StonksMod"
     },
     "spawnWorldTypes": [
-      "Surface",
-      "CUSTOM:Stonkland"
+      "CUSTOM:Stonkland",
+      "CUSTOM:AidsLand"
     ]
   }
 }

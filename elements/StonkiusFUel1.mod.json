@@ -5,7 +5,7 @@
     "renderType": 0,
     "texture": "stonkiusfuel",
     "customModelName": "Normal",
-    "name": "Stonkius F Uel1",
+    "name": "Stonkius Fuel",
     "creativeTab": {
       "value": "CUSTOM:StonksMod"
     },
@@ -14,7 +14,7 @@
     "useDuration": 0,
     "toolType": 1.0,
     "damageCount": 0,
-    "destroyAnyBlock": false,
+    "destroyAnyBlock": true,
     "stayInGridWhenCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,

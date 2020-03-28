@@ -11,6 +11,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.common.DimensionManager;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.client.event.ModelRegistryEvent;
+import net.minecraftforge.client.EnumHelperClient;
 
 import net.minecraft.world.gen.layer.IntCache;
 import net.minecraft.world.gen.layer.GenLayerZoom;
@@ -64,6 +65,7 @@ import net.minecraft.block.BlockFalling;
 import net.minecraft.block.Block;
 
 import net.mcreator.stonks.item.ItemStonkland;
+import net.mcreator.stonks.block.BlockSTONKFLUID;
 import net.mcreator.stonks.ElementsStonks;
 
 import javax.annotation.Nullable;
@@ -112,6 +114,14 @@ public class WorldStonkland extends ElementsStonks.ModElement {
 			this.biomeProvider = new BiomeProviderCustom(this.world.getSeed());
 			this.nether = NETHER_TYPE;
 			this.hasSkyLight = true;
+		}
+
+		@Override
+		@SideOnly(Side.CLIENT)
+		public net.minecraft.client.audio.MusicTicker.MusicType getMusicType() {
+			return EnumHelperClient.addMusicType("stonks:stonks",
+					(net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY.getObject(new ResourceLocation(("stonks:stonks"))), 6000,
+					24000);
 		}
 
 		@Override
@@ -717,7 +727,7 @@ public class WorldStonkland extends ElementsStonks.ModElement {
 	public static class ChunkProviderModded implements IChunkGenerator {
 		private static final IBlockState STONE = Blocks.DIRT.getStateFromMeta(0);
 		private static final IBlockState STONE2 = Blocks.DIRT.getStateFromMeta(0);
-		private static final IBlockState FLUID = Blocks.STONE.getStateFromMeta(0);
+		private static final IBlockState FLUID = BlockSTONKFLUID.block.getDefaultState();
 		private static final IBlockState AIR = Blocks.AIR.getDefaultState();
 		private static final IBlockState BEDROCK = Blocks.BEDROCK.getDefaultState();
 		private static final int SEALEVEL = 63;

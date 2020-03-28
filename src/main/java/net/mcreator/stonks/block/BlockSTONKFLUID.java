@@ -29,6 +29,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.block.Block;
 
 import net.mcreator.stonks.world.WorldStonkland;
+import net.mcreator.stonks.world.WorldAidsLand;
 import net.mcreator.stonks.ElementsStonks;
 
 import java.util.Random;
@@ -48,7 +49,7 @@ public class BlockSTONKFLUID extends ElementsStonks.ModElement {
 
 	@Override
 	public void initElements() {
-		elements.blocks.add(() -> new BlockFluidClassic(fluid, Material.WATER) {
+		elements.blocks.add(() -> new BlockFluidClassic(fluid, Material.LAVA) {
 		}.setUnlocalizedName("stonkfluid").setRegistryName("stonkfluid"));
 		elements.items.add(() -> new ItemBlock(block).setRegistryName("stonkfluid"));
 	}
@@ -80,9 +81,9 @@ public class BlockSTONKFLUID extends ElementsStonks.ModElement {
 	@Override
 	public void generateWorld(Random random, int chunkX, int chunkZ, World world, int dimID, IChunkGenerator cg, IChunkProvider cp) {
 		boolean dimensionCriteria = false;
-		if (dimID == 0)
-			dimensionCriteria = true;
 		if (dimID == WorldStonkland.DIMID)
+			dimensionCriteria = true;
+		if (dimID == WorldAidsLand.DIMID)
 			dimensionCriteria = true;
 		if (!dimensionCriteria)
 			return;

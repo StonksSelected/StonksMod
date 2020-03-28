@@ -13,6 +13,7 @@ import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.World;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.NonNullList;
 import net.minecraft.util.EnumParticleTypes;
 import net.minecraft.util.EnumFacing;
@@ -35,6 +36,7 @@ import net.minecraft.block.Block;
 import net.mcreator.stonks.world.WorldStonkland;
 import net.mcreator.stonks.world.WorldAidsLand;
 import net.mcreator.stonks.procedure.ProcedureStonkiusOreRedstoneOn;
+import net.mcreator.stonks.procedure.ProcedureStonkiusOreBlockDestroyedByPlayer;
 import net.mcreator.stonks.item.ItemStonkiusFUel1;
 import net.mcreator.stonks.creativetab.TabStonksMod;
 import net.mcreator.stonks.ElementsStonks;
@@ -95,6 +97,8 @@ public class BlockStonkiusOre extends ElementsStonks.ModElement {
 						blockCriteria = true;
 					if (blockAt.getBlock() == Blocks.PURPUR_STAIRS.getDefaultState().getBlock())
 						blockCriteria = true;
+					if (blockAt.getBlock() == Blocks.END_STONE.getDefaultState().getBlock())
+						blockCriteria = true;
 					return blockCriteria;
 				}
 			})).generate(world, random, new BlockPos(x, y, z));
@@ -115,8 +119,23 @@ public class BlockStonkiusOre extends ElementsStonks.ModElement {
 		}
 
 		@Override
+		public boolean isFullCube(IBlockState state) {
+			return false;
+		}
+
+		@Override
+		public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
+			return new AxisAlignedBB(0D, 0D, 0D, 1D, 70D, 1D);
+		}
+
+		@Override
 		public boolean isBeaconBase(IBlockAccess worldObj, BlockPos pos, BlockPos beacon) {
 			return true;
+		}
+
+		@Override
+		public boolean isOpaqueCube(IBlockState state) {
+			return false;
 		}
 
 		@Override
@@ -196,6 +215,23 @@ public class BlockStonkiusOre extends ElementsStonks.ModElement {
 					double d5 = (random.nextFloat() - 0.5D) * 2D;
 					world.spawnParticle(EnumParticleTypes.CRIT, d0, d1, d2, d3, d4, d5);
 				}
+		}
+
+		@Override
+		public boolean removedByPlayer(IBlockState state, World world, BlockPos pos, EntityPlayer entity, boolean willHarvest) {
+			boolean retval = super.removedByPlayer(state, world, pos, entity, willHarvest);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			{
+				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				ProcedureStonkiusOreBlockDestroyedByPlayer.executeProcedure($_dependencies);
+			}
+			return retval;
 		}
 	}
 }
